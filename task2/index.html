@@ -16,7 +16,7 @@
 
 
 <div id="city-wrap">
-    <h1> список городов </h1>
+    <h1> список город </h1>
 
 </div>
 
@@ -40,11 +40,12 @@
     };
 
     function getCitiesName(array) {
-        let citiesArr = [];
+       /* let citiesArr = [];
         array.forEach((object)=>{
             citiesArr.push(object.name);
         });
-        return citiesArr.sort();
+        return citiesArr.sort();*/
+        return array.map(object=>object.name).sort();
     }
 
     ajax(url1).then((response) => {
